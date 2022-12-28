@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>LEGENDARY PHONEIX 🐲🐦🦁</title>
+    <link rel="shortcut icon" href="./assets/icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <section id="seleccionar-mascota">
+
+        <h1 class="titulo">Legendary Phoneix</h1>
+        <h2 class="subtitulo">Elige tu Phoneix:</h2>
+
+        <div id='contenedorTarjetas' class="tarjetas">
+        </div>
+
+        <button id="boton-mascota">Seleccionar</button>
+
+    </section>
+
+    <section id="verMapa">
+
+        <h1 class="titulo">Recorre el Mapa con tu Phoneix</h1>
+        <canvas id="mapa"></canvas>
+        <button onmouseup="detener()" onmousedown="arriba()" id="arriba" class="direction">⬆</button>
+        
+        <div class="botons">
+            <button onmouseup="detener()" onmousedown="izquierda()" id="izquierda" class="direction">⬅</button>
+            <button onmouseup="detener()" onmousedown="abajo()" id="abajo" class="direction">⬇</button>
+            <button onmouseup="detener()" onmousedown="derecha()" id="derecha" class="direction">➡</button>
+        </div>
+
+    </section>
+
+    <section id="siono">
+        
+        <h2 class="titulo-option">¿Quieres aceptar el Combate?</h2>
+        <button id="si" class="option">Aceptar Combate</button>
+        <button id="no" class="option">Rechazar Combate</button>
+
+    </section>
+
+    <section id="seleccionar-ataque">
+
+        <h1 class="titulo">Legendary Phoneix</h1>
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+
+        <div id="contenedorAtaques" class="tarjetas-ataques">
+        </div>
+
+        <div id="mensajes">
+
+            <p id="resultado">Mucha suerte🍀</p>
+
+        <section id="reiniciar">
+
+            <button id="boton-reiniciar">Reiniciar</button>
+
+        </section>
+
+        </div>
+
+        <div class="ataques">
+
+            <div class="ataques-jugador">
+
+                <span id="imgJugador"></span>
+                <p id="mascota-jugador">
+                </p>
+
+                <p id="vidas-jugador">0</p>
+                <h4 class="v">Victorias</h4>
+
+                <div id="ataques-del-jugador"></div>
+
+            </div>
+
+            <div class="ataques-enemigo">
+
+                <span id="imgEnemigo"></span>
+                <p id="mascota-enemigo">
+                </p>
+
+                <p id="vidas-enemigo">0</p>              
+                <h4 class="v">Victorias</h4>
+
+                <div id="ataques-del-enemigo"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <link rel="stylesheet" href="./CSS/phoneix.css">
+</body>
+<script src="./JS/legendary.js"></script>
+</html>

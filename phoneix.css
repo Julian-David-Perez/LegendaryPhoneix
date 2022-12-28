@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@700&display=swap');
+
+body {
+  font-family: 'Carter One', sans-serif;
+  background-color: #041562;
+}
+
+.v{
+  margin-top: 10px;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#seleccionar-mascota:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.titulo {
+  color: #727272;
+  font-size: 32px;
+  font-family: inherit;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 20px;
+}
+
+.tarjetas, .tarjetas-ataques {
+  display: flex;
+  gap: 10px;
+}
+.tarjetas, .tarjetas-ataques:hover {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.tarjeta-de-mokepon {
+  width: 180px;
+  height: 100px;
+  background: #11468F;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.tarjeta-de-mokepon:hover {
+  width: 195px;
+  height: 115px;
+  background: #11468F;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+#boton-mascota {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: inherit;
+  margin-top: 30px;
+}
+#boton-mascota:hover {
+  width: 215px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid grey;
+  color: black;
+  font-family: inherit;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #376ff1;
+  width: 200px;
+  color: #000;
+  transition: 0.5s;
+}
+
+#seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-de-ataque {
+  background-color: #1f63c4;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: transparent;
+  width: 90px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.boton-de-ataque:hover {
+  background-color: #0a418d;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: transparent;
+  width: 100px;
+  color: grey;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#mensajes {
+  width: 280px;
+  background: #EEEEEE;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boton-reiniciar {
+  border-radius: 8px;
+  background-color: #11468F;
+  font-family: inherit;
+  color: white;
+}
+#boton-reiniciar:hover {
+  border-radius: 8px;
+  background-color: #2465c0;
+  font-family: inherit;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 90px;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  color: white;
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#verMapa{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mapa{
+  border: 4px solid #376ff1;
+}
+
+.botons{
+  display: flex;
+}
+.direction{
+  width: 70px;
+  height: 50px;
+  margin: 4px;
+  background-color: #68a7ff;
+  font-size: 22px;
+}
+.direction:hover{
+  width: 90px;
+  height: 70px;
+  margin: 6px;
+  background-color: #8bbbfd;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#siono{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo-option{
+  color: #919191;
+}
+.option{
+  width: 290px;
+  margin: 10px;
+  height: 80px;
+  font-family: inherit;
+  border-radius: 12px;
+  background-color: #3D56B2;
+  color: #adadad;
+}
+.option:hover{
+  width: 320px;
+  height: 100px;
+  margin: 17px;
+  font-family: inherit;
+  background-color: #6b80cf;
+  color: #252525;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 980px) {
+  .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+  }
+  #mapa{
+    width: 320px;
+    height: 320px;
+  }
+}
